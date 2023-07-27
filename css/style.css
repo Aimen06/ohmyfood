@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+
+body {
+    padding: 0;
+    margin: 0 0;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    padding: 14px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    height: 36px
+}
+
+.logo img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.top {
+
+}
+
+.localisation {
+    margin-top: 0;
+    background: #EAEAEA;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    flex-shrink: 0;
+}
+
+.localisation input{
+    border : 0;
+    background: #EAEAEA;
+}
+
+main  {
+    margin-top:5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    background: #F6F6F6;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 0;
+    width: 275px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.title p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+}
+
+.title button {
+    color: white;
+    border-radius: 25px;
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+    height: 50px;
+    width: 218px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    border:0;
+}
+
+.fonctionnement {
+    padding-top: 20px;
+    padding-left: 4%;
+    padding-right:4%;
+    display: flex;
+    flex-direction: column;
+}
+
+.choix-restaurant,
+.composer-menu,
+.degustez-restaurant  {
+    position: relative;
+    width: calc(100% - 8%);
+    margin-top: 10px;
+    padding-left: 6%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background: #F6F6F6;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    height: 24px;
+    width: 24px;
+    background-color : #9356DC;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: -12px;
+}
+
+.choix-restaurant i,
+.composer-menu i,
+.degustez-restaurant i {
+    width: 30%;
+    padding-left:20%;
+    color:  #7E7E7E;
+    font-size: 20px;
+}
+
+.fonctionnement .text {
+    padding-left: 10%;
+    width: 60%;
+    font-size: 16px;
+}
+
+.restaurants {
+ padding-left: 4%;
+ padding-right: 4%;
+}
+
+.new {
+    position: absolute;
+    width: 80px;
+
+    border-radius: 2px;
+    background: #99E2D0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    color: #008766;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    top: 20px;
+    left:245px;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+.card-menu {
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.10);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.img-card {
+    position :relative;
+    height: 231px;
+    width: 100%;
+}
+
+.img-card img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.wrap {
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.card-title {
+    display: flex;
+    height: 40px;
+}
+
+.first-line {
+    display: flex;
+   justify-content: space-between;
+}
+
+h3 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.heart {
+    padding-top: 30px;
+    padding-right: 3%;
+}
+
+footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    color: white;
+}
+
+.logo-txt {
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-family: Shrikhand, sans-serif;
+    font-size: 27px;
+}
+
+.link {
+    display: flex;
+    padding-bottom:10px;
+}
+
+.link i {
+    padding-right :2%;
+}
