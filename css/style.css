@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Shrikhand');
 
-
 body {
     padding: 0;
     margin: 0 0;
@@ -26,8 +25,14 @@ header {
     object-fit: cover;
 }
 
-.top {
+.img-baniere {
+    height: 275px;
+}
 
+.img-baniere img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .localisation {
@@ -253,5 +258,39 @@ footer {
 }
 
 .link i {
-    padding-right :2%;
+    padding-right :5px;
+}
+
+/*menu*/
+.entrees ,
+.plats,
+.desserts {
+    margin-bottom:10px;
+    padding-left: 3%;
+    padding-right: 4%;
+}
+
+.wrap-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3%;
+}
+
+h2 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 3px;
+    background: #99E2D0;
 }

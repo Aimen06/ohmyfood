@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Shrikhand');
-
-body {
-    padding: 0;
-    margin: 0 auto;
-    font-family: Roboto, sans-serif;
-}
-
 header {
     padding-top: 14px;
     padding-left: 4%;
@@ -19,7 +10,15 @@ header i {
     color : #353535;
 }
 
-header .logo-txt {
+header .logo-text {
+    margin-left:25%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-family: Shrikhand, sans-serif;
+    font-size: 27px;
+}
+
+header .logo-text {
     margin-left:25%;
     padding-top:10px;
     padding-bottom: 10px;
@@ -31,87 +30,28 @@ main {
     position:relative;
 }
 
-.logo img {
-    height: 100%;
-    object-fit: cover;
-}
-
-.img-baniere {
-    height: 275px;
-}
-
-.img-baniere img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.title {
+    padding-top: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 .wrap-sections {
     border-radius: 40px 40px 0 0;
     background-color: #F6F6F6;
     padding-bottom: 50px;
-}
-
-.titre {
-    padding-top: 20px;
-    padding-left: 4%;
-    padding-right: 4%;
-}
-
-.entrees ,
-.plats,
-.desserts {
-    margin-bottom:10px;
-    padding-left: 3%;
-    padding-right: 4%;
-}
-
-.wrap-title {
-    display: flex;
-   justify-content: space-between;
-    align-items: center;
-    padding-right: 3%;
+    position:absolute;
+    top:240px;
+    width: 100%;
 }
 
 h1 {
     color: #000;
     font-family: Shrikhand, sans-serif;
     font-size: 28px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     padding:0;
     margin:0;
-}
-
-.lower-bar {
-    margin:0;
-    padding:0;
-    color: #99E2D0;
-}
-
-.wrap-sections {
-    position:absolute;
-    top:240px;
-    width: 100%;
-}
-
-h2 {
-    color: #000;
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-h2::after {
-    content: "";
-    display: block;
-    width: 10%;
-    height: 3px;
-    background: #99E2D0;
 }
 
 article {
@@ -127,81 +67,53 @@ article {
     margin-bottom: 15px;
 }
 
- h3 {
-     margin:0;
-     height: 21px;
-     flex-shrink: 0;
-     color: #000;
-     text-overflow: ellipsis;
-     font-family: Roboto,sans-serif;
-     font-size: 18px;
-     font-style: normal;
-     font-weight: 500;
-     line-height: normal;
- }
+h3 {
+    margin:0;
+    height: 21px;
+    flex-shrink: 0;
+    color: #000;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
 
- .plat-description {
-     padding-top: 5px;
-     overflow: hidden;
-     color: #000;
-     text-overflow: ellipsis;
-     font-size: 15.043px;
-     font-style: normal;
-     font-weight: 300;
-     line-height: normal;
-     margin : 0;
- }
+.plat-description {
+    padding-top: 5px;
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    font-size: 15.043px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin : 0;
+}
 
- .price {
-     color: #353535;
-     text-align: center;
-     font-family: Roboto,sans-serif;
-     font-size: 15px;
-     font-style: normal;
-     font-weight: 700;
-     line-height: normal;
-     padding-top: 25px
- }
+.price {
+    color: #353535;
+    text-align: center;
+    font-family: Roboto,sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 25px
+}
 
- .commande-bouton {
-     margin-left: 23%;
-     width: 186px;
-     height: 50px;
-     flex-shrink: 0;
-     border-radius: 25px;
-     background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
-     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-     border: 1px;
-     color :white;
-     margin-top: 20px;
- }
+.order-button {
+    margin-left: 23%;
+    width: 186px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    border: 1px;
+    color :white;
+    margin-top: 20px;
+}
 
 footer {
     position: relative;
     top : 950px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #353535;
-    display: flex;
-    flex-direction: column;
-    padding-left: 3%;
-    color: white;
 }
 
-footer .logo-txt {
-    padding-top:10px;
-    padding-bottom: 10px;
-    font-family: Shrikhand, sans-serif;
-    font-size: 27px;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-.link {
-    display: flex;
-    padding-bottom:10px;
-}
-
-.link i {
-    padding-right :2%;
-}
