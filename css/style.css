@@ -162,7 +162,6 @@ h1 {
 .new {
     position: absolute;
     width: 80px;
-
     border-radius: 2px;
     background: #99E2D0;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
@@ -174,7 +173,7 @@ h1 {
     font-weight: 500;
     line-height: normal;
     top: 20px;
-    left:245px;
+    right:  20px;
     padding-top:5px;
     padding-bottom: 5px;
 }
@@ -245,6 +244,12 @@ footer {
     color: white;
 }
 
+footer a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
 .logo-txt {
     padding-top:10px;
     padding-bottom: 10px;
@@ -293,4 +298,91 @@ h2::after {
     width: 10%;
     height: 3px;
     background: #99E2D0;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 990px) {
+
+    h1 {
+        width: auto;
+    }
+
+    .title p {
+        margin-top: 0;
+    }
+
+    h2 {
+        text-transform: none;
+    }
+
+    h2::after {
+        width: 0;
+    }
+
+    .wrap-menu {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .choix-restaurant,
+    .composer-menu,
+    .degustez-restaurant {
+        width: 27%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .fonctionnement .text {
+        width: auto;
+    }
+
+    .restaurants {
+        margin-top : 40px;
+        background-color: #F6F6F6;
+    }
+
+    .wrap-articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card-menu {
+        width: 47%;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    footer .logo-txt {
+        font-family: Shrikhand, sans-serif;
+        font-size: 18px;
+        width:10%;
+        padding-right: 2%;
+    }
+
+    footer .wrap-links {
+        padding-right: 5%;
+        padding-left: 40%;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    footer .link {
+        font-size: 12px;
+        padding-right: 2%;
+    }
+
 }
