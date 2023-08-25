@@ -10,6 +10,14 @@ header i {
     color : #353535;
 }
 
+.heart {
+   padding-top: 0;
+}
+
+.heart-solid {
+    top: 0;
+}
+
 .logo-text {
     font-family: Shrikhand, sans-serif;
     font-size: 27px;
@@ -47,6 +55,27 @@ main {
     top:240px;
     width: 100%;
 }
+section {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.entrees {
+    animation-delay: 0s;
+}
+
+.plats {
+    animation-delay: 600ms;
+}
+
+.desserts {
+    animation-delay: 1200ms;
+}
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
 
 h1 {
     color: #000;
@@ -65,10 +94,20 @@ article {
     background: #FFF;
     box-shadow: 0 4.011494159698486px 15.043103218078613px 0 rgba(0, 0, 0, 0.10);
     padding-left: 4%;
-    padding-right: 4%;
+    /*padding-right: 4%;*/
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 15px;
+    overflow:hidden;
+}
+
+article:hover .checkmark {
+    transition: 1s;
+    left: 0; /* SET THE SLIDER TO BE 0 */
+}
+@keyframes moveLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(100px); }
 }
 
 h3 {
@@ -99,7 +138,8 @@ h3 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-top: 25px
+    padding-top: 25px;
+    margin-right: 3%;
 }
 
 .wrap-button {
@@ -141,6 +181,7 @@ footer .logo-text {
     
     .wrap-title {
         justify-content: center;
+        align-items: center;
     }
 
     .wrap-title i {
