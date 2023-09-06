@@ -193,6 +193,10 @@ button:hover {
     font-size: 20px;
 }
 
+.wrap-menu i:hover {
+    color: #9356DC;
+}
+
 .fonctionnement .text {
     padding-left: 10%;
     width: 60%;
