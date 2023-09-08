@@ -1,25 +1,22 @@
-html {
-    position: relative;
-    min-height: 100%;
-}
 
-body {
-    margin : 0 0;
-}
 header {
     padding-top: 14px;
     padding-left: 4%;
     display: flex;
     flex-direction: row;
-    justify-content: normal;
-    max-width: 1440px;
-    width: 100%;
-    box-shadow:none;
+    justify-content: space-between;
+    width: 96%;
+    box-shadow: none;
 }
 
 header i {
     color : #353535;
 }
+
+header a {
+    margin-right: 0;
+}
+
 
 .heart {
    padding-top: 0;
@@ -35,13 +32,6 @@ header i {
 }
 
 header .logo-text {
-    margin-left:25%;
-    padding-top:10px;
-    padding-bottom: 10px;
-}
-
-header .logo-text {
-    margin-left:25%;
     padding-top:10px;
     padding-bottom: 10px;
     font-family: Shrikhand, sans-serif;
@@ -62,10 +52,10 @@ main {
     border-radius: 40px 40px 0 0;
     background-color: #F6F6F6;
     padding-bottom: 241px;
-    position:absolute;
-    top:240px;
     width: 100%;
+    margin-top: -50px;
 }
+
 section {
     opacity: 0;
     animation: fadeIn 2s forwards;
@@ -114,6 +104,7 @@ article:hover .checkmark {
     visibility: visible;
     animation-name: checkmark-animation;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes checkmark-animation {
@@ -175,11 +166,8 @@ h3 {
 }
 
 footer {
-    position: absolute;
-    bottom: -315px;
     padding-right: 20px;
-    width: 76%;
-    max-width: 1400px;
+    width: 96%;
 }
 
 footer .logo-text {
