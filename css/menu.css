@@ -1,9 +1,20 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin : 0 0;
+}
 header {
     padding-top: 14px;
     padding-left: 4%;
     display: flex;
     flex-direction: row;
     justify-content: normal;
+    max-width: 1440px;
+    width: 100%;
+    box-shadow:none;git stat
 }
 
 header i {
@@ -50,7 +61,7 @@ main {
 .wrap-sections {
     border-radius: 40px 40px 0 0;
     background-color: #F6F6F6;
-    padding-bottom: 200px;
+    padding-bottom: 241px;
     position:absolute;
     top:240px;
     width: 100%;
@@ -164,9 +175,11 @@ h3 {
 }
 
 footer {
-    position: relative;
-    top: 1060px;
+    position: absolute;
+    bottom: -315px;
     padding-right: 20px;
+    width: 76%;
+    max-width: 1400px;
 }
 
 footer .logo-text {
@@ -219,7 +232,7 @@ footer .logo-text {
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
-        padding-bottom: 100px;
+        padding-bottom: 35px;
     }
 
     .order-button {
@@ -227,6 +240,6 @@ footer .logo-text {
     }
 
     footer {
-        top: 50px;
+        bottom: -180px;
     }
 }
